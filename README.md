@@ -37,16 +37,15 @@ This repository contains the full implementation of a human-computer interaction
 
 ##  Directory Structure
 
-. ├── src/ │ ├── esp32_data_extract.py # TCP receiver & packet parser │ ├── filter.py # UKF filter and quaternion tools │ ├── gui_mjpeg.py # PyQt6 GUI + MJPEG server │ ├── tk_sender.py # Tkinter controller + ZMQ transmitter │ ├── run_zmq_servo.py # ZMQ angle-mapped servo control │ └── run_zmq_armik.py # ZMQ position-mapped IK control ├── config.yaml # Network/config file ├── imu_data_cache.json # Fallback IMU data cache ├── README.md # Project documentation
 
 ##  Getting Started
 
 1. Flash the ESP32 with UART-IMU communication and TCP upload code.
-2. Run `gui_mjpeg.py` to launch the live motion dashboard and HTTP stream.
-3. Launch `tk_sender.py` to interactively send position or angle data.
+2. Run `.py` to launch the live motion dashboard and HTTP stream.
+3. Launch `.py` to interactively send position or angle data.
 4. Choose one of:
-   - `run_zmq_servo.py` for angle control
-   - `run_zmq_armik.py` for inverse kinematics control
+   - `.py` for angle control
+   - `.py` for inverse kinematics control
 
 ##  Example Transmission Format
 
