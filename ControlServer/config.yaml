@@ -1,0 +1,3 @@
+router_host: "192.168.1.63"
+zmq_port: 5555
+message_preview_length: 20
